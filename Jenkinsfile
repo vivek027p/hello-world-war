@@ -9,7 +9,7 @@ pipeline {
 				stage('Build') {
             				steps {
                				 sh "cd hello-world-war"
-						sh "docker build -t vivek027p/hello:1.0"
+						sh "docker build -t vivek027p/hello:1.0 ."
             					}
        					 }
 				stage('Publish') {
